@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#cancel {
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#cancel {
+  background: none;
+  border: none;
+  width: 1rem;
+  justify-self: end;
+}
+
+#cancel:hover {
+  cursor: pointer;
+}
+
+#cancel:active {
+  transform: scale(0.9);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+#submit {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  width: 50%;
+  justify-self: center;
+}
+
+#submit:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
