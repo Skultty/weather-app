@@ -90,3 +90,16 @@ input {
   border: 1px solid #ccc;
   border-radius: 0.25rem;
 }
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#weather {
+  background: #ccc;
+}
+
+#forecast {
+  background: red;
+}
